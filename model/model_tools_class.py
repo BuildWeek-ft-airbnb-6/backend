@@ -25,18 +25,19 @@ class mt():
                 tokens.append(x)
         return tokens
 
-    def get_days(text):
+    def get_days(datet):
         '''
             get_days has one argument (text)
             
             It is used to create a new feature in the data set 'host_since_days'
         '''
-
-        if type(text) == float:
+        if type(datet) == float:
             return 0
-
-        date = text.split('-')
-        days = ((current_time.year - int(date[0])) * 365) + ((current_time.month - int(date[1])) * 30) + (int(date[2]))
+        if type(datet) == str:
+            dates = datet.split('-')
+            days = ((current_time.year - int(dates[0])) * 365) + ((current_time.month - int(dates[1])) * 30) + int(dates[2])
+        else :
+            days = ((current_time.year - datet.year) * 365) + ((current_time.month - datet.month) * 30) + datet.day
         return days
 
     def get_token_doc():
