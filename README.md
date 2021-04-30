@@ -1,6 +1,6 @@
 # backend
 
-This repository hosts the model and otber files necessary for the AirBnb application to make predictions. The data used to create the model is hosted on Kaggle 
+This repository hosts the model and other files necessary for the AirBnb application to make predictions. The data used to create the model is hosted on Kaggle 
 and can be found [here](https://www.kaggle.com/rudymizrahi/airbnb-listings-in-major-us-cities-deloitte-ml).
 
 ### File Structure
@@ -12,6 +12,7 @@ and can be found [here](https://www.kaggle.com/rudymizrahi/airbnb-listings-in-ma
     │   ├── .gitignore            # Ignored files
     │   ├── model.ipynb           # Model for predictions
     │   ├── model_tools_class.py  # Functions needed for data prep
+    │   ├── model_visualizations.py  # Functions needed for data prep
     │   └── requirements.text     # Required packages
     └── README.md
     
